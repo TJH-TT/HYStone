@@ -22,7 +22,7 @@
     GM_setValue('gh_reward_progress', 1)
   }
   if (!GM_getValue('gh_start_time')) {
-    GM_setValue('gh_start_time', '01:59:59')
+    GM_setValue('gh_start_time', '02:00:20')
   }
   if (!GM_getValue('gh_interval')) {
     GM_setValue('gh_interval', '1000')
@@ -70,7 +70,7 @@
   }
 
   function set_start_time() {
-    let temp = prompt('请输入抢码时间，格式示例：01:59:59', GM_getValue('gh_start_time'))
+    let temp = prompt('请输入抢码时间，格式示例：02:00:20', GM_getValue('gh_start_time'))
     if (temp == null) return
     if (/^(\d{2}):(\d{2}):(\d{2})$/.test(temp)) {
       GM_setValue('gh_start_time', temp)
